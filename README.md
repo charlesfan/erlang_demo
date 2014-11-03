@@ -4,7 +4,6 @@ erlang_demo
 A demo server on erlang. Just has two simple routes: 
 
 http://loaclhost:8080
-
 http://localhost:8080/login
 
 ### Install and Start Server
@@ -12,4 +11,10 @@ http://localhost:8080/login
 ```
 make
 ./_rel/erlang_demo_release/bin/erlang_demo_release start
+```
+
+### Try to Login
+
+```
+curl -i -u "charles:1234" http://localhost:8080/login
 ```
